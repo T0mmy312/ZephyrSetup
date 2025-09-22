@@ -1,5 +1,7 @@
 # Setup
 
+This is a setup for the stm32H755ZI, but would work for moast asymetric dual-core mcus.
+
 The project uses the [Zephyr getting started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html)
 with the zephyr install in `~/zephyrproject`. Where it differs is that the project is not in `~/zephyrproject/zephyr/app` but can be anywhere.
 
