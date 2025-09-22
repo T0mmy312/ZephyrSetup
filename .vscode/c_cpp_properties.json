@@ -1,0 +1,56 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "compileCommands": "${workspaceFolder}/build_m7/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/tommy/zephyrproject/zephyr/include",
+                "/home/tommy/zephyrproject/zephyr/include/zephyr",
+                "${workspaceFolder}/build_m4/zephyr/include",
+                "${workspaceFolder}/build_m4/zephyr/include/generated",
+                "${workspaceFolder}/build_m4/zephyr/include/generated/zephyr",
+                "${workspaceFolder}/build_m7/zephyr/include",
+                "${workspaceFolder}/build_m7/zephyr/include/generated",
+                "${workspaceFolder}/build_m7/zephyr/include/generated/zephyr"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/home/tommy/zephyrproject/zephyr/include",
+                    "/home/tommy/zephyrproject/zephyr/include/zephyr",
+                    "${workspaceFolder}/build_m4/zephyr/include",
+                    "${workspaceFolder}/build_m4/zephyr/include/generated",
+                    "${workspaceFolder}/build_m4/zephyr/include/generated/zephyr",
+                    "${workspaceFolder}/build_m7/zephyr/include",
+                    "${workspaceFolder}/build_m7/zephyr/include/generated",
+                    "${workspaceFolder}/build_m7/zephyr/include/generated/zephyr"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
+
+//{ // doesn't work as well
+//    "configurations": [
+//        {
+//            "name": "zephyr",
+//            "includePath": [
+//                "${workspaceFolder}/**",
+//                "${workspaceFolder}/shared/include",
+//                "/home/tommy/zephyrproject/zephyr/include",
+//                "${workspaceFolder}/build_m4/zephyr/include",
+//                "${workspaceFolder}/build_m4/zephyr/include/generated",
+//                "${workspaceFolder}/build_m7/zephyr/include",
+//                "${workspaceFolder}/build_m7/zephyr/include/generated"
+//            ],
+//            "compilerPath": "/usr/bin/gcc",
+//            "intelliSenseMode": "linux-gcc-arm",
+//            "cStandard": "c17",
+//            "cppStandard": "gnu++17"
+//        }
+//    ],
+//    "version": 4
+//}
