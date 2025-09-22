@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "Linux",
-            "compileCommands": "${workspaceFolder}/build_m7/compile_commands.json",
+            "compileCommands": "${workspaceFolder}/out/combined_compile_commands.json",
             "includePath": [
                 "${workspaceFolder}/**",
                 "${userHome}/zephyrproject/zephyr/include",

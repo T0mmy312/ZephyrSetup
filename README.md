@@ -42,3 +42,11 @@ fi
 # Unset the Zephyr base environment variable
 unset ZEPHYR_BASE
 ```
+
+# General Info
+
+## Intellisens
+
+Intellisens uses the `out/combined_compile_commands.json` which is a file generated from the two seperate core `compile_commands.json` from `build_m7/compile_commands.json` and `build_m4/compile_commands.json` by the `combine_compile_commands.sh` script.
+
+The script is automatically called every time the cmake is reconfigured or built, sadly not when the file is saved, but I tried. If there are problems with intellisens then just run `combine_compile_commands.sh` and see if it fixes it.

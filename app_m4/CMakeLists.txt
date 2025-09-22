@@ -17,3 +17,27 @@ zephyr_include_directories(${CMAKE_CURRENT_LIST_DIR}/../shared/include)
 zephyr_include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
 
 target_sources(app PRIVATE src/main.c)
+
+# the following is just to make sure the the compile commands are combined for good intellisens
+# it just runs the combine_compile_commands.sh script when CMake is reconfigured or built to ensure its up to date
+# --------------------------------------------------
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+add_custom_command(
+    OUTPUT ${CMAKE_CURRENT_LIST_DIR}/../out/combined_compile_commands.json
+    COMMAND ${CMAKE_CURRENT_LIST_DIR}/../combine_compile_commands.sh
+    DEPENDS ${CMAKE_BINARY_DIR}/compile_commands.json
+    COMMENT "Combining compile_commands.json files"
+)
+add_custom_target(update_combined_commands ALL
+    DEPENDS ${CMAKE_CURRENT_LIST_DIR}/../out/combined_compile_commands.json
+)
+
+execute_process(
+    COMMAND ${CMAKE_COMMAND} -E echo "Merging compile_commands.json..."
+)
+execute_process(
+    COMMAND bash ${CMAKE_SOURCE_DIR}/../combine_compile_commands.sh
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/..
+)
+# --------------------------------------------------
