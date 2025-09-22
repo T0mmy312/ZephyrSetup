@@ -5,8 +5,8 @@
             "compileCommands": "${workspaceFolder}/build_m7/compile_commands.json",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/tommy/zephyrproject/zephyr/include",
-                "/home/tommy/zephyrproject/zephyr/include/zephyr",
+                "${userHome}/zephyrproject/zephyr/include",
+                "${userHome}/zephyrproject/zephyr/include/zephyr",
                 "${workspaceFolder}/build_m4/zephyr/include",
                 "${workspaceFolder}/build_m4/zephyr/include/generated",
                 "${workspaceFolder}/build_m4/zephyr/include/generated/zephyr",
@@ -17,8 +17,8 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}",
-                    "/home/tommy/zephyrproject/zephyr/include",
-                    "/home/tommy/zephyrproject/zephyr/include/zephyr",
+                    "${userHome}/zephyrproject/zephyr/include",
+                    "${userHome}/zephyrproject/zephyr/include/zephyr",
                     "${workspaceFolder}/build_m4/zephyr/include",
                     "${workspaceFolder}/build_m4/zephyr/include/generated",
                     "${workspaceFolder}/build_m4/zephyr/include/generated/zephyr",
@@ -40,7 +40,7 @@
 //            "includePath": [
 //                "${workspaceFolder}/**",
 //                "${workspaceFolder}/shared/include",
-//                "/home/tommy/zephyrproject/zephyr/include",
+//                "${env:HOME}/zephyrproject/zephyr/include",
 //                "${workspaceFolder}/build_m4/zephyr/include",
 //                "${workspaceFolder}/build_m4/zephyr/include/generated",
 //                "${workspaceFolder}/build_m7/zephyr/include",
