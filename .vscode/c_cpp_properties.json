@@ -40,7 +40,7 @@
 //            "includePath": [
 //                "${workspaceFolder}/**",
 //                "${workspaceFolder}/shared/include",
-//                "${env:HOME}/zephyrproject/zephyr/include",
+//                "${userHome}/zephyrproject/zephyr/include",
 //                "${workspaceFolder}/build_m4/zephyr/include",
 //                "${workspaceFolder}/build_m4/zephyr/include/generated",
 //                "${workspaceFolder}/build_m7/zephyr/include",
